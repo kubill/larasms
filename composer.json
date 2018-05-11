@@ -1,0 +1,39 @@
+{
+  "name": "kubill/larasms",
+  "type": "library",
+  "description": "laravel send sms library",
+  "keywords": [
+    "library",
+    "sms"
+  ],
+  "homepage": "https://github.com/kubill/larasms",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kubill",
+      "email": "meiweijia@gmail.com"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Kubill\\LaraSms\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Kubill\\LaraSms\\Tests\\": "tests/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kubill\\LaraSms\\SmsServiceProvider"
+      ],
+      "aliases": {
+        "Sms": "Kubill\\LaraSms\\Facades\\Sms"
+      }
+    }
+  }
+}
